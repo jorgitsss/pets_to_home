@@ -22,13 +22,28 @@
   <div>
     <%= form.label :description, style: "display: block" %>
     <%= form.text_field :description %>
+  <hr>
+    <div class="form-group">
+    <label for="file_input"><%= form.label :photo, style: "display: block" %></label>
+    <input type="file" class="form-control-file" id="file_input" name="file_input">
   </div>
-
-  <div>
-    <%= form.label :photo, style: "display: block" %>
-    <%= form.text_field :photo %>
+  <hr>
+  <div class="form-group">
+    <label for="pet_types">pets:</label>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="pet_types[]" value="Perro" id="pet_type_dog">
+      <label class="form-check-label" for="pet_type_dog">Perro</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="pet_types[]" value="Gato" id="pet_type_cat">
+      <label class="form-check-label" for="pet_type_cat">Gato</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="pet_types[]" value="Ave" id="pet_type_bird">
+      <label class="form-check-label" for="pet_type_bird">Ave</label>
+    </div>
+    <!-- Agrega más elementos de la lista de chequeo para tipos de mascotas aquí -->
   </div>
-
   <div>
     <%= form.label :id_cities, style: "display: block" %>
     <%= form.number_field :id_city %>
