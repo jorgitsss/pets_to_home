@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @proprietary %>
+
+<div>
+  <%= link_to "Edit this proprietary", edit_proprietary_path(@proprietary) %> |
+  <%= link_to "Back to proprietaries", proprietaries_path %>
+
+  <%= button_to "Destroy this proprietary", @proprietary, method: :delete %>
+</div>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Proprietaries</h1>
+
+<div id="proprietaries">
+  <% @proprietaries.each do |proprietary| %>
+    <%= render proprietary %>
+    <p>
+      <%= link_to "Show this proprietary", proprietary %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New proprietary", new_proprietary_path %>

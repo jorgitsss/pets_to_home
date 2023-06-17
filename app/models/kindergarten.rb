@@ -1,0 +1,2 @@
+class Kindergarten < ApplicationRecord
+end
