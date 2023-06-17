@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ .hr-thick {
+  border: none;
+  border-top: 3px solid #d30000; /* Color del borde y grosor deseado */
+  margin: 10px 0; /* Margen superior e inferior deseado */
+}

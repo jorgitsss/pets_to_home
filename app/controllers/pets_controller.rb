@@ -3,7 +3,8 @@ class PetsController < ApplicationController
 
   # GET /pets or /pets.json
   def index
-    @pets = Pet.all
+    # @pets = Pet.all
+    @pets = Pet.page(params[:page]).per(10)
   end
 
   # GET /pets/1 or /pets/1.json
@@ -65,6 +66,6 @@ class PetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pet_params
-      params.require(:pet).permit(:name, :type, :size, :gender, :id_user, :id_city)
+      params.require(:pet).permit(:name, :type, :size, :gender, :id_users, :id_cities)
     end
 end

@@ -1,6 +1,7 @@
-<p style="color: green"><%= notice %></p>
-
 <h1>Proprietaries</h1>
+<%= link_to "New proprietary", new_proprietary_path %>
+<hr>
+<%= paginate @proprietaries %>
 
 <div id="proprietaries">
   <% @proprietaries.each do |proprietary| %>
@@ -8,7 +9,7 @@
     <p>
       <%= link_to "Show this proprietary", proprietary %>
     </p>
+<hr class="hr-thick">
   <% end %>
+<hr>
 </div>
-
-<%= link_to "New proprietary", new_proprietary_path %>

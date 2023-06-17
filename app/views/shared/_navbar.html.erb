@@ -6,15 +6,21 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><%= link_to "Home", root_path, class:"btn btn-dark nav-link" %></li>
+        <li class="nav-item"><%= link_to "Kindergartens", root_path, class:"btn btn-dark nav-link" %></li>
+        <li class="nav-item"> <%= link_to "Pets", pets_path, class: "nav-link" %>
+        <li class="nav-item"> <%= link_to "Cities", cities_path, class: "nav-link" %>
+        <li class="nav-item"> <%= link_to "Proprietaries", proprietaries_path, class: "nav-link" %>
+</li>
 
       </ul>
       <span class="navbar-text">
         <% if user_signed_in? %>
   <%= current_user.email %>
+          <li class="nav-item">muestro menu de usuario registrado</li>
   <button class="btn btn-sm btn-dark" type="button"><%= link_to t('.edit_profile'), edit_user_registration_path, class: "navbar-item" %></button>
   <button class="btn btn-sm btn-dark" type="button"><%= link_to("Cerrar sesión", destroy_user_session_path, method: :delete, data: { turbo_method: :delete }) %></button>
 <% else %>
+        <li class="nav-item">muestro menu de consultas sin usuario</li>
   <button class="btn btn-sm btn-dark" type="button"><%= link_to 'Iniciar sesión', new_user_session_path, class:"btn btn-sm btn-dark" %></button>
   <button class="btn btn-sm btn-dark" type="button"><%= link_to 'Registrarse', new_user_registration_path, class:"btn btn-sm btn-dark" %></button>
 <% end %>

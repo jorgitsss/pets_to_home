@@ -1,12 +1,14 @@
 
-<%= link_to "New kindergarten", new_kindergarten_path %>
 <h1>Kindergartens</h1>
+<%= link_to "New kindergarten", new_kindergarten_path %>
 <hr>
+<%= paginate @kindergartens %>
 <div id="kindergartens">
   <% @kindergartens.each do |kindergarten| %>
     <%= render kindergarten %>
     <p>
-      <%= link_to "Show this kindergarten", kindergarten %>
+  <a href="<%= kindergarten_path(kindergarten) %>" class="btn btn-primary">Show this kindergarten</a>
     </p>
+    <hr class="hr-thick">
   <% end %>
 </div>

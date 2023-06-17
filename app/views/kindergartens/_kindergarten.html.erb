@@ -1,42 +1,22 @@
-<div id="<%= dom_id kindergarten %>">
-  <p>
-    <strong>Name:</strong>
-    <%= kindergarten.name %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= kindergarten.description %>
-  </p>
-
-  <p>
-    <strong>Photo:</strong>
-    <%= kindergarten.photo %>
-  </p>
-
-  <p>
+<div class="card border border-primary" style="width: 18rem;" id="<%= dom_id kindergarten %>">
+  <img src="..." class="card-img-top" alt="...">  <%= kindergarten.photo %>
+  <div class="card-body">
+    <h5 class="card-title"> <p>
+    <strong>Id proprietary:</strong>
+    <%= kindergarten.id_proprietaries %>
+  </p><strong>Name:</strong>
+    <%= kindergarten.name %></h5><h4>
     <strong>Id city:</strong>
-    <%= kindergarten.id_city %>
+    <%= kindergarten.id_cities %></h4>
+    <p class="card-text"><strong>Description:</strong>
+    <%= kindergarten.description %></p>
+      <p>
+    <strong>Phone:</strong>
+    <%= kindergarten.phone %>
   </p>
-
   <p>
     <strong>Price:</strong>
     <%= kindergarten.price %>
   </p>
-
-  <p>
-    <strong>Phone:</strong>
-    <%= kindergarten.phone %>
-  </p>
-
-  <p>
-    <strong>Published:</strong>
-    <%= kindergarten.published %>
-  </p>
-
-  <p>
-    <strong>Id proprietary:</strong>
-    <%= kindergarten.id_proprietary %>
-  </p>
-
+  </div>
 </div>

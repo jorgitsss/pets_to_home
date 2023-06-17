@@ -3,7 +3,8 @@ class ProprietariesController < ApplicationController
 
   # GET /proprietaries or /proprietaries.json
   def index
-    @proprietaries = Proprietary.all
+    # @proprietaries = Proprietary.all
+    @proprietaries = Proprietary.page(params[:page]).per(10)
   end
 
   # GET /proprietaries/1 or /proprietaries/1.json

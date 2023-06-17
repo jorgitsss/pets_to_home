@@ -10,23 +10,22 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %></h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+    <p class="card-text">    <%= form.label :location, style: "display: block" %>
+    <%= form.text_field :location %></p>
+    <p class="card-text">    <%= form.label :city, style: "display: block" %>
+    <%= form.text_field :city %></p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
   </div>
-
-  <div>
-    <%= form.label :location, style: "display: block" %>
-    <%= form.text_field :location %>
-  </div>
-
-  <div>
-    <%= form.label :city, style: "display: block" %>
-    <%= form.text_field :city %>
-  </div>
-
+</div>
   <div>
     <%= form.submit %>
   </div>
+
+
 <% end %>

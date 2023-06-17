@@ -1,32 +1,22 @@
-<div id="<%= dom_id pet %>">
-  <p>
-    <strong>Name:</strong>
-    <%= pet.name %>
-  </p>
 
-  <p>
-    <strong>Type:</strong>
-    <%= pet.type %>
-  </p>
-
-  <p>
+<div class="card" style="width: 18rem;" id="<%= dom_id pet %>">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= pet.name %></h5>
+    <h6><strong>Type:</strong>
+    <%= pet.type %></h6>
+    <p class="card-text">    
     <strong>Size:</strong>
-    <%= pet.size %>
-  </p>
-
-  <p>
+    <%= pet.size %></p>
+<p class="card-text">
     <strong>Gender:</strong>
-    <%= pet.gender %>
-  </p>
-
-  <p>
+    <%= pet.gender %></p>
+<p class="card-text">
     <strong>Id user:</strong>
-    <%= pet.id_user %>
-  </p>
-
-  <p>
+    <%= pet.id_users %></p>
+<p class="card-text">
     <strong>Id city:</strong>
-    <%= pet.id_city %>
-  </p>
-
+    <%= pet.id_cities %></p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>

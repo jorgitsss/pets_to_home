@@ -3,7 +3,8 @@ class KindergartensController < ApplicationController
 
   # GET /kindergartens or /kindergartens.json
   def index
-    @kindergartens = Kindergarten.all
+  # @kindergartens = Kindergarten.all
+    @kindergartens = Kindergarten.page(params[:page]).per(10)
   end
 
   # GET /kindergartens/1 or /kindergartens/1.json
@@ -65,6 +66,6 @@ class KindergartensController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def kindergarten_params
-      params.require(:kindergarten).permit(:name, :description, :photo, :id_city, :price, :phone, :published, :id_proprietary)
+      params.require(:kindergarten).permit(:name, :description, :photo, :id_cities, :price, :phone, :published, :id_proprietaries)
     end
 end

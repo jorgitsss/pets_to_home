@@ -1,17 +1,7 @@
-<div id="<%= dom_id city %>">
-  <p>
-    <strong>Name:</strong>
-    <%= city.name %>
-  </p>
-
-  <p>
-    <strong>Location:</strong>
-    <%= city.location %>
-  </p>
-
-  <p>
-    <strong>City:</strong>
-    <%= city.city %>
-  </p>
-
+  <div class="card border border-primary" style="width: 18rem;" id="<%= dom_id city %>">
+  <div class="card-body">
+    <h5 class="card-title"><%= city.name %></h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary"><%= city.location %></h6>
+    <p class="card-text">    <%= city.gps %></p>
+  </div>
 </div>

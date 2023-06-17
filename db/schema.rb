@@ -58,7 +58,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_17_153028) do
     t.string "name"
     t.string "email"
     t.string "password"
-    t.integer "id_city"
+    t.integer "id_cities"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "encrypted_password", default: "", null: false
