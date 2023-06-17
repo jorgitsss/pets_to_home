@@ -5,8 +5,8 @@ class CreatePets < ActiveRecord::Migration[7.0]
       t.string :type
       t.string :size
       t.string :gender
-      t.integer :id_user
-      t.integer :id_city
+      t.integer :id_users
+      t.integer :id_cities
 
       t.timestamps
     end

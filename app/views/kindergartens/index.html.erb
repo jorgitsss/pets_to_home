@@ -1,7 +1,7 @@
-<p style="color: green"><%= notice %></p>
 
+<%= link_to "New kindergarten", new_kindergarten_path %>
 <h1>Kindergartens</h1>
-
+<hr>
 <div id="kindergartens">
   <% @kindergartens.each do |kindergarten| %>
     <%= render kindergarten %>
@@ -10,5 +10,3 @@
     </p>
   <% end %>
 </div>
-
-<%= link_to "New kindergarten", new_kindergarten_path %>

@@ -4,11 +4,11 @@ class CreateKindergartens < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :description
       t.string :photo
-      t.integer :id_city
+      t.integer :id_cities
       t.decimal :price
       t.integer :phone
       t.boolean :published
-      t.integer :id_proprietary
+      t.integer :id_proprietaries
 
       t.timestamps
     end
